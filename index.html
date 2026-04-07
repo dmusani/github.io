@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dilip Musani — Data & Analytics Executive</title>
-  <meta name="description" content="Data & Analytics executive with 18+ years building high-performance analytics organizations at Facebook, Atlassian, and Life360." />
-  <meta property="og:title" content="Dilip Musani — Data & Analytics Executive" />
+  <title>Dilip Musani — Data &amp; Analytics Executive</title>
+  <meta name="description" content="Data and Analytics executive with 18+ years building high-performance analytics organizations at Facebook, Atlassian, and Life360." />
+  <meta property="og:title" content="Dilip Musani — Data and Analytics Executive" />
   <meta property="og:description" content="18+ years building high-performance analytics and data science organizations. AI strategy, modern data infrastructure, cross-functional leadership." />
   <meta property="og:type" content="website" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -13,24 +13,18 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
     body {
       font-family: 'DM Sans', 'Helvetica Neue', sans-serif;
-      background: #FAFAF8;
-      color: #1a1a1a;
+      background: #FAFAF8; color: #1a1a1a;
       -webkit-font-smoothing: antialiased;
     }
-
     .hero {
       background: linear-gradient(135deg, #0f2027 0%, #203a43 40%, #2c5364 100%);
-      padding: 48px 32px 40px;
-      color: white;
-      position: relative;
-      overflow: hidden;
+      padding: 48px 32px 40px; color: white;
+      position: relative; overflow: hidden;
     }
     .hero::before {
-      content: '';
-      position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+      content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
       background: radial-gradient(circle at 80% 20%, rgba(255,255,255,0.05) 0%, transparent 50%);
     }
     .hero-inner { max-width: 800px; margin: 0 auto; position: relative; z-index: 1; }
@@ -42,29 +36,21 @@
       font-size: 18px; font-weight: 500; margin: 8px 0 20px;
       color: rgba(255,255,255,0.75); letter-spacing: 0.04em;
     }
-    .hero .contact-row {
+    .contact-row {
       display: flex; flex-wrap: wrap; gap: 12px 24px;
       font-size: 14px; color: rgba(255,255,255,0.7);
     }
-    .hero .contact-row a {
-      color: #7DD3C0; text-decoration: none;
-      transition: color 0.2s;
-    }
-    .hero .contact-row a:hover { color: #a8eed8; }
-
+    .contact-row a { color: #7DD3C0; text-decoration: none; transition: color 0.2s; }
+    .contact-row a:hover { color: #a8eed8; }
     .container { max-width: 800px; margin: 0 auto; padding: 0 32px; }
-
     .summary { padding: 32px 0 24px; }
     .summary p { font-size: 16px; line-height: 1.7; color: #444; }
-
     .section-title {
       font-family: 'Playfair Display', serif;
       font-size: 22px; font-weight: 700; color: #0f2027;
       border-bottom: 2px solid #0f2027; padding-bottom: 8px;
       display: inline-block; margin-bottom: 14px;
     }
-
-    /* Metrics */
     .metrics-grid {
       display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px;
       padding: 20px 0 32px;
@@ -84,8 +70,6 @@
       text-transform: uppercase; letter-spacing: 0.04em;
     }
     .metric-sub { font-size: 11px; color: #999; margin-top: 2px; }
-
-    /* Competencies */
     .competencies { padding-bottom: 28px; }
     .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
     .tag {
@@ -94,8 +78,6 @@
       border: 1px solid #D4E4DF; transition: background 0.2s;
     }
     .tag:hover { background: #ddeee9; }
-
-    /* Experience */
     .experience { padding-bottom: 28px; }
     .role-card {
       background: white; border-radius: 10px; margin-bottom: 10px;
@@ -107,12 +89,14 @@
       padding: 16px 20px;
       display: flex; justify-content: space-between; align-items: center;
     }
+    .role-left-top { display: flex; align-items: center; }
     .role-dot {
       width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0;
       display: inline-block; margin-right: 10px;
     }
     .role-company { font-size: 16px; font-weight: 700; color: #1a1a1a; }
     .role-title { font-size: 14px; color: #666; margin-top: 3px; padding-left: 18px; }
+    .role-right { display: flex; align-items: center; }
     .role-period { font-size: 13px; color: #999; white-space: nowrap; }
     .role-chevron {
       font-size: 18px; color: #999; transition: transform 0.25s ease;
@@ -120,49 +104,36 @@
     }
     .role-card.expanded .role-chevron { transform: rotate(180deg); }
     .role-details {
-      max-height: 0; overflow: hidden;
-      transition: max-height 0.35s ease;
+      max-height: 0; overflow: hidden; transition: max-height 0.35s ease;
     }
-    .role-card.expanded .role-details { max-height: 600px; }
+    .role-card.expanded .role-details { max-height: 800px; }
     .role-details-inner {
-      padding: 0 20px 18px 38px;
-      border-top: 1px solid #f0f0f0;
+      padding: 0 20px 18px 38px; border-top: 1px solid #f0f0f0;
     }
     .role-details ul { margin: 14px 0 0; padding: 0 0 0 16px; list-style: disc; }
     .role-details li { font-size: 14px; line-height: 1.65; color: #444; margin-bottom: 8px; }
-
-    /* Tech */
     .tech { padding-bottom: 28px; }
     .tech-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 8px; }
     .tech-card {
-      background: white; border-radius: 10px; padding: 14px 16px;
-      border: 1px solid #eee;
+      background: white; border-radius: 10px; padding: 14px 16px; border: 1px solid #eee;
     }
     .tech-label {
       font-size: 12px; font-weight: 700; color: #203a43;
       text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 6px;
     }
     .tech-items { font-size: 13px; color: #555; line-height: 1.6; }
-
-    /* Education */
     .education { padding-bottom: 40px; }
     .education p { font-size: 15px; margin: 6px 0; color: #444; }
-
-    /* Footer */
     .footer {
       background: #0f2027; padding: 20px 32px;
       text-align: center; color: rgba(255,255,255,0.4); font-size: 12px;
     }
-
-    /* Print */
     @media print {
       .hero { padding: 24px; }
       .role-details { max-height: none !important; }
       .role-chevron { display: none; }
       .metric-card, .role-card { break-inside: avoid; }
     }
-
-    /* Mobile */
     @media (max-width: 640px) {
       .hero { padding: 32px 20px; }
       .hero h1 { font-size: 32px; }
@@ -175,15 +146,14 @@
 </head>
 <body>
 
-  <!-- Hero -->
   <div class="hero">
     <div class="hero-inner">
       <h1>Dilip Musani</h1>
-      <p class="tagline">Data & Analytics Executive</p>
+      <p class="tagline">Data &amp; Analytics Executive</p>
       <div class="contact-row">
         <span>San Francisco Bay Area</span>
         <span>901.734.2845</span>
-        <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6e0a0702071e031b1d0f00072e09030f0702400d0103">[email&#160;protected]</a></span>
+        <span>dilipmusani@gmail.com</span>
         <a href="https://www.linkedin.com/in/dmusani/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
         <a href="https://dmusani.github.io" target="_blank" rel="noopener noreferrer">Portfolio ↗</a>
       </div>
@@ -192,12 +162,10 @@
 
   <div class="container">
 
-    <!-- Summary -->
     <div class="summary">
-      <p>Data & Analytics executive with 18+ years building, scaling, and leading high-performance analytics and data science organizations at companies including Facebook (Meta), Atlassian, and Life360. Proven track record in AI strategy, generative AI and LLM integration, modern data infrastructure, and cross-functional executive stakeholder management.</p>
+      <p>Data &amp; Analytics executive with 18+ years building, scaling, and leading high-performance analytics and data science organizations at companies including Facebook (Meta), Atlassian, and Life360. Proven track record in AI strategy, generative AI and LLM integration, modern data infrastructure, and cross-functional executive stakeholder management.</p>
     </div>
 
-    <!-- Metrics -->
     <div class="metrics-grid">
       <div class="metric-card">
         <div class="metric-value">$1.2M</div>
@@ -221,172 +189,250 @@
       </div>
     </div>
 
-    <!-- Competencies -->
     <div class="competencies">
       <h2 class="section-title">Core Competencies</h2>
-      <div class="tags" id="competencies-tags"></div>
+      <div class="tags">
+        <span class="tag">AI Strategy &amp; Generative AI</span>
+        <span class="tag">LLM Integration &amp; MLOps</span>
+        <span class="tag">Data Strategy &amp; Governance</span>
+        <span class="tag">Organizational Design</span>
+        <span class="tag">Executive Stakeholder Management</span>
+        <span class="tag">Experimentation &amp; A/B Testing</span>
+        <span class="tag">Predictive Analytics &amp; ML</span>
+        <span class="tag">Data Democratization</span>
+        <span class="tag">Modern Data Platform Migration</span>
+        <span class="tag">Vendor Optimization &amp; P&amp;L</span>
+        <span class="tag">Cross-Functional Leadership</span>
+        <span class="tag">Board &amp; C-Suite Reporting</span>
+      </div>
     </div>
 
-    <!-- Experience -->
     <div class="experience">
       <h2 class="section-title">Experience</h2>
-      <div id="experience-list"></div>
+
+      <div class="role-card expanded" data-color="#0A6E5C" style="border-color:#0A6E5C;" onclick="toggleRole(this)">
+        <div class="role-header">
+          <div>
+            <div class="role-left-top">
+              <span class="role-dot" style="background:#0A6E5C"></span>
+              <span class="role-company">Life360, Inc</span>
+            </div>
+            <div class="role-title">Vice President of Data</div>
+          </div>
+          <div class="role-right">
+            <span class="role-period">May 2024 – Present</span>
+            <span class="role-chevron">▾</span>
+          </div>
+        </div>
+        <div class="role-details">
+          <div class="role-details-inner">
+            <ul>
+              <li>Rebuilt the data organization from the ground up: hired, mentored, and managed a high-performing team of analysts, data engineers, and data scientists. Defined roles, operating models, and career ladders aligned with business strategy.</li>
+              <li>Spearheaded AI-native transformation, embedding generative AI and LLM-powered tools into analytics, reporting, and engineering workflows to accelerate delivery of early warning systems for key metrics.</li>
+              <li>Pioneered agentic AI workflows that autonomously surface insights with built-in validation and governance guardrails to ensure stakeholder trust and confidence.</li>
+              <li>Architected modern data infrastructure by leading adoption of Databricks and dbt, building scalable pipelines and a governed semantic layer that democratized data access across Product, Marketing, Finance, and Customer Care.</li>
+              <li>Drove strategic vendor optimization, renegotiating the Amplitude contract to deliver $1.2M in cost savings while aligning tooling investments with a unified, cost-efficient data stack.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="role-card" data-color="#2D5FA0" onclick="toggleRole(this)">
+        <div class="role-header">
+          <div>
+            <div class="role-left-top">
+              <span class="role-dot" style="background:#2D5FA0"></span>
+              <span class="role-company">PandaDoc, Inc</span>
+            </div>
+            <div class="role-title">VP of Data (Growth, Product, Go-to-Market)</div>
+          </div>
+          <div class="role-right">
+            <span class="role-period">Dec 2021 – Jan 2024</span>
+            <span class="role-chevron">▾</span>
+          </div>
+        </div>
+        <div class="role-details">
+          <div class="role-details-inner">
+            <ul>
+              <li>Hired and managed an organization of 22 data professionals across Data Science, Analytics, and Data Engineering.</li>
+              <li>Developed and executed enterprise data strategy improving governance, fidelity, observability, and data literacy — enabling self-serve analytics.</li>
+              <li>Identified revenue cannibalization from free-tier products, driving executive decision to remove free offerings and improve paid conversion.</li>
+              <li>Built machine learning models for lead scoring, upsell propensity, and customer health scoring.</li>
+              <li>Led data platform migration from Redshift to modern stack (Snowflake, dbt, Airbyte).</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="role-card" data-color="#0052CC" onclick="toggleRole(this)">
+        <div class="role-header">
+          <div>
+            <div class="role-left-top">
+              <span class="role-dot" style="background:#0052CC"></span>
+              <span class="role-company">Atlassian, Inc</span>
+            </div>
+            <div class="role-title">Director of Growth &amp; Core Data Science</div>
+          </div>
+          <div class="role-right">
+            <span class="role-period">Jul 2019 – Dec 2021</span>
+            <span class="role-chevron">▾</span>
+          </div>
+        </div>
+        <div class="role-details">
+          <div class="role-details-inner">
+            <ul>
+              <li>Led sizing and launch of Freemium products, improving customer acquisition by 35%.</li>
+              <li>Hired and developed an organization of 25+ data science professionals across Atlassian's product portfolio.</li>
+              <li>Strengthened experimentation capabilities by building standardized A/B testing processes.</li>
+              <li>Developed Forecasting Center of Excellence in partnership with Finance.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="role-card" data-color="#365EBF" onclick="toggleRole(this)">
+        <div class="role-header">
+          <div>
+            <div class="role-left-top">
+              <span class="role-dot" style="background:#365EBF"></span>
+              <span class="role-company">Intuit, Inc</span>
+            </div>
+            <div class="role-title">Head of Payments Data Science &amp; Experimentation COE</div>
+          </div>
+          <div class="role-right">
+            <span class="role-period">Apr 2017 – Jul 2019</span>
+            <span class="role-chevron">▾</span>
+          </div>
+        </div>
+        <div class="role-details">
+          <div class="role-details-inner">
+            <ul>
+              <li>Streamlined merchant signup and onboarding, saving $20M+ in revenue share.</li>
+              <li>Built and managed a team of analytics professionals supporting B2B payments products.</li>
+              <li>Established Experimentation Center of Excellence driving rigorous A/B testing culture.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="role-card" data-color="#1877F2" onclick="toggleRole(this)">
+        <div class="role-header">
+          <div>
+            <div class="role-left-top">
+              <span class="role-dot" style="background:#1877F2"></span>
+              <span class="role-company">Facebook, Inc (now Meta)</span>
+            </div>
+            <div class="role-title">Head of Sales &amp; Marketing Data Science</div>
+          </div>
+          <div class="role-right">
+            <span class="role-period">Sep 2014 – Apr 2017</span>
+            <span class="role-chevron">▾</span>
+          </div>
+        </div>
+        <div class="role-details">
+          <div class="role-details-inner">
+            <ul>
+              <li>Built and led data science team supporting global sales org driving $15B in annual revenue.</li>
+              <li>Led A/B test validating +30% lift, resulting in decision to double High Value sales team.</li>
+              <li>Developed sales funnel strategy and efficiency metrics for 200+ person sales organization.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="role-card" data-color="#003087" onclick="toggleRole(this)">
+        <div class="role-header">
+          <div>
+            <div class="role-left-top">
+              <span class="role-dot" style="background:#003087"></span>
+              <span class="role-company">PayPal, Inc</span>
+            </div>
+            <div class="role-title">Senior Manager, Checkout Analytics</div>
+          </div>
+          <div class="role-right">
+            <span class="role-period">Feb 2012 – May 2014</span>
+            <span class="role-chevron">▾</span>
+          </div>
+        </div>
+        <div class="role-details">
+          <div class="role-details-inner">
+            <ul>
+              <li>Launched streamlined online checkout experience reducing friction and increasing conversion across web and mobile.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="role-card" data-color="#4D148C" onclick="toggleRole(this)">
+        <div class="role-header">
+          <div>
+            <div class="role-left-top">
+              <span class="role-dot" style="background:#4D148C"></span>
+              <span class="role-company">FedEx Corporation</span>
+            </div>
+            <div class="role-title">Operations Analytics</div>
+          </div>
+          <div class="role-right">
+            <span class="role-period">Jan 2006 – Feb 2012</span>
+            <span class="role-chevron">▾</span>
+          </div>
+        </div>
+        <div class="role-details">
+          <div class="role-details-inner">
+            <ul>
+              <li>Developed analytical models for intermodal transportation optimization, identifying $10M+ in potential cost savings and realizing $3M through operational improvements.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
     </div>
 
-    <!-- Technology -->
     <div class="tech">
-      <h2 class="section-title">Technology & Platforms</h2>
-      <div class="tech-grid" id="tech-grid"></div>
+      <h2 class="section-title">Technology &amp; Platforms</h2>
+      <div class="tech-grid">
+        <div class="tech-card">
+          <div class="tech-label">Infrastructure</div>
+          <div class="tech-items">Databricks, Snowflake, Redshift, dbt, Airbyte, Monte Carlo, GitLab</div>
+        </div>
+        <div class="tech-card">
+          <div class="tech-label">Analytics</div>
+          <div class="tech-items">Amplitude, Tableau, Sigma, Segment, SQL, Python, R</div>
+        </div>
+        <div class="tech-card">
+          <div class="tech-label">AI &amp; ML</div>
+          <div class="tech-items">Generative AI, LLM Integration, Claude, Cursor, Agentic AI, LaunchDarkly</div>
+        </div>
+        <div class="tech-card">
+          <div class="tech-label">Business Systems</div>
+          <div class="tech-items">Salesforce, HubSpot, Gainsight, Jira, Confluence, Coda</div>
+        </div>
+      </div>
     </div>
 
-    <!-- Education -->
     <div class="education">
       <h2 class="section-title">Education</h2>
       <p>Master's in Industrial Engineering</p>
       <p>Bachelor's in Mechanical Engineering</p>
     </div>
+
   </div>
 
-  <div class="footer">© 2026 Dilip Musani · Built with purpose</div>
+  <div class="footer">&copy; 2026 Dilip Musani &middot; Built with purpose</div>
 
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-    // Data
-    const competencies = [
-      "AI Strategy & Generative AI", "LLM Integration & MLOps", "Data Strategy & Governance",
-      "Organizational Design", "Executive Stakeholder Management", "Experimentation & A/B Testing",
-      "Predictive Analytics & ML", "Data Democratization", "Modern Data Platform Migration",
-      "Vendor Optimization & P&L", "Cross-Functional Leadership", "Board & C-Suite Reporting"
-    ];
-
-    const experience = [
-      {
-        company: "Life360, Inc", title: "Vice President of Data",
-        period: "May 2024 – Present", color: "#0A6E5C",
-        bullets: [
-          "Rebuilt the data organization from the ground up: hired, mentored, and managed a high-performing team of analysts, data engineers, and data scientists. Defined roles, operating models, and career ladders aligned with business strategy.",
-          "Spearheaded AI-native transformation, embedding generative AI and LLM-powered tools into analytics, reporting, and engineering workflows to accelerate delivery of early warning systems for key metrics.",
-          "Pioneered agentic AI workflows that autonomously surface insights with built-in validation and governance guardrails to ensure stakeholder trust and confidence.",
-          "Architected modern data infrastructure by leading adoption of Databricks and dbt, building scalable pipelines and a governed semantic layer that democratized data access across Product, Marketing, Finance, and Customer Care.",
-          "Drove strategic vendor optimization, renegotiating the Amplitude contract to deliver $1.2M in cost savings while aligning tooling investments with a unified, cost-efficient data stack."
-        ]
-      },
-      {
-        company: "PandaDoc, Inc", title: "VP of Data (Growth, Product, Go-to-Market)",
-        period: "Dec 2021 – Jan 2024", color: "#2D5FA0",
-        bullets: [
-          "Hired and managed an organization of 22 data professionals across Data Science, Analytics, and Data Engineering.",
-          "Developed and executed enterprise data strategy improving governance, fidelity, observability, and data literacy — enabling self-serve analytics.",
-          "Identified revenue cannibalization from free-tier products, driving executive decision to remove free offerings and improve paid conversion.",
-          "Built machine learning models for lead scoring, upsell propensity, and customer health scoring.",
-          "Led data platform migration from Redshift to modern stack (Snowflake, dbt, Airbyte)."
-        ]
-      },
-      {
-        company: "Atlassian, Inc", title: "Director of Growth & Core Data Science",
-        period: "Jul 2019 – Dec 2021", color: "#0052CC",
-        bullets: [
-          "Led sizing and launch of Freemium products, improving customer acquisition by 35%.",
-          "Hired and developed an organization of 25+ data science professionals across Atlassian's product portfolio.",
-          "Strengthened experimentation capabilities by building standardized A/B testing processes.",
-          "Developed Forecasting Center of Excellence in partnership with Finance."
-        ]
-      },
-      {
-        company: "Intuit, Inc", title: "Head of Payments Data Science & Experimentation COE",
-        period: "Apr 2017 – Jul 2019", color: "#365EBF",
-        bullets: [
-          "Streamlined merchant signup and onboarding, saving $20M+ in revenue share.",
-          "Built and managed a team of analytics professionals supporting B2B payments products.",
-          "Established Experimentation Center of Excellence driving rigorous A/B testing culture."
-        ]
-      },
-      {
-        company: "Facebook, Inc (now Meta)", title: "Head of Sales & Marketing Data Science",
-        period: "Sep 2014 – Apr 2017", color: "#1877F2",
-        bullets: [
-          "Built and led data science team supporting global sales org driving $15B in annual revenue.",
-          "Led A/B test validating +30% lift, resulting in decision to double High Value sales team.",
-          "Developed sales funnel strategy and efficiency metrics for 200+ person sales organization."
-        ]
-      },
-      {
-        company: "PayPal, Inc", title: "Senior Manager, Checkout Analytics",
-        period: "Feb 2012 – May 2014", color: "#003087",
-        bullets: [
-          "Launched streamlined online checkout experience reducing friction and increasing conversion across web and mobile."
-        ]
-      },
-      {
-        company: "FedEx Corporation", title: "Operations Analytics",
-        period: "Jan 2006 – Feb 2012", color: "#4D148C",
-        bullets: [
-          "Developed analytical models for intermodal transportation optimization, identifying $10M+ in potential cost savings and realizing $3M through operational improvements."
-        ]
-      }
-    ];
-
-    const techCategories = [
-      { label: "Infrastructure", items: "Databricks, Snowflake, Redshift, dbt, Airbyte, Monte Carlo, GitLab" },
-      { label: "Analytics", items: "Amplitude, Tableau, Sigma, Segment, SQL, Python, R" },
-      { label: "AI & ML", items: "Generative AI, LLM Integration, Claude, Cursor, Agentic AI, LaunchDarkly" },
-      { label: "Business Systems", items: "Salesforce, HubSpot, Gainsight, Jira, Confluence, Coda" }
-    ];
-
-    // Render competencies
-    const tagsContainer = document.getElementById('competencies-tags');
-    competencies.forEach(c => {
-      const span = document.createElement('span');
-      span.className = 'tag';
-      span.textContent = c;
-      tagsContainer.appendChild(span);
-    });
-
-    // Render experience
-    const expList = document.getElementById('experience-list');
-    let expandedIdx = 0;
-
-    function renderExperience() {
-      expList.innerHTML = '';
-      experience.forEach((role, idx) => {
-        const isExpanded = expandedIdx === idx;
-        const card = document.createElement('div');
-        card.className = 'role-card' + (isExpanded ? ' expanded' : '');
-        if (isExpanded) {
-          card.style.borderColor = role.color;
-        }
-
-        card.innerHTML = `
-          <div class="role-header">
-            <div>
-              <div style="display:flex;align-items:center;">
-                <span class="role-dot" style="background:${role.color}"></span>
-                <span class="role-company">${role.company}</span>
-              </div>
-              <div class="role-title">${role.title}</div>
-            </div>
-            <div style="display:flex;align-items:center;">
-              <span class="role-period">${role.period}</span>
-              <span class="role-chevron">▾</span>
-            </div>
-          </div>
-          <div class="role-details">
-            <div class="role-details-inner">
-              <ul>${role.bullets.map(b => `<li>${b}</li>`).join('')}</ul>
-            </div>
-          </div>
-        `;
-
-        card.addEventListener('click', () => {
-          expandedIdx = expandedIdx === idx ? -1 : idx;
-          renderExperience();
-        });
-
-        expList.appendChild(card);
+  <script>
+    function toggleRole(card) {
+      var wasExpanded = card.classList.contains('expanded');
+      document.querySelectorAll('.role-card').forEach(function(c) {
+        c.classList.remove('expanded');
+        c.style.borderColor = '#eee';
       });
+      if (!wasExpanded) {
+        card.classList.add('expanded');
+        card.style.borderColor = card.getAttribute('data-color');
+      }
     }
-    renderExperience();
+  </script>
 
-    // Render tech
-    const techGrid = document.getElementById('tech-grid');
-    techCategories.forEach(cat => {
-      const div = document.crea
+</body>
+</html>
